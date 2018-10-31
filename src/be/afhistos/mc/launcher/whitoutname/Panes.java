@@ -266,7 +266,7 @@ public class Panes extends JPanel implements SwingerEventListener, ActionListene
         String crypt = "";
         int i = 0;
         while (i < p.length()){
-            int c = p.charAt(i) ^ 48;
+            int c = p.charAt(i) ^ x; //x is a secret number
             crypt = String.valueOf(crypt) + (char)c;
             ++i;
         }
@@ -276,7 +276,7 @@ public class Panes extends JPanel implements SwingerEventListener, ActionListene
         String crypt = "";
         int i = 0;
         while (i < p.length()){
-            int c = p.charAt(i) ^ 48;
+            int c = p.charAt(i) ^ x; //x is a secret number
             //ou diviser
             crypt = String.valueOf(crypt) + (char)c;
             ++i;
